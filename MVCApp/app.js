@@ -19,5 +19,8 @@ app.use('/index',indexController);
 var productController = require('./product.js');
 app.use('/product',productController);
 
+var customerController = require('./customer.js');
+app.use('/customer',customerController);
+
 
 var server=app.listen(3000,function() {});
