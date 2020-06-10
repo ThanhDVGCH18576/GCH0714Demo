@@ -15,10 +15,11 @@
         </tr>
         {{#each customers}}
             <tr>
-                <Td>{{_id}}</Td>
+                <td><a href="/customer/delete?id={{_id}}">Delete</a></Td>
                 <td>{{name}} and {{address}}</td>
             </tr>
         {{/each}}
     </table>
+    
 </body>
 </html>
